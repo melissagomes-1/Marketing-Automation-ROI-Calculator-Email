@@ -3,10 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>FlowCRM Email</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  .cta-button {
+    transition: all 0.25s ease !important;
+    background-size: 200% auto !important;
+    background-position: left center !important;
+  }
+
+  .cta-button:hover {
+    background-position: right center !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 18px rgba(255, 79, 139, 0.30) !important;
+  }
+
+  @media screen and (max-width: 600px) {
+    .email-container {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+
+    .mobile-padding {
+      padding-left: 24px !important;
+      padding-right: 24px !important;
+    }
+
+    .hero-img {
+      width: 100% !important;
+      max-width: 100% !important;
+      height: auto !important;
+      border-radius: 16px !important;
+    }
+
+    .cta-button {
+      width: auto !important;
+      max-width: 100% !important;
+      padding: 16px 34px !important;
+      font-size: 13px !important;
+    }
+  }
+</style>
 </head>
 
   <body>
-  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <table class="email-container" width="600" cellpadding="0" cellspacing="0" border="0" role="presentation"
+       style="width:600px;max-width:600px;background:#FFFFFF;margin:0 auto;">
 
     <!-- ========================= -->
 <!-- LOGO -->
@@ -38,19 +80,20 @@
 <tr>
   <td align="center" style="padding:0 24px 34px 24px;background:#FFFFFF;">
 
-    <img src="https://res.cloudinary.com/wk2nvqhl/image/upload/v1783023332/topo_emkt2_ibscz6.png"
-         alt="Calcule o potencial de economia da sua operação em menos de 2 minutos"
-         width="552"
-         style="
-         display:block;
-         width:100%;
-         max-width:552px;
-         height:auto;
-         border:1px solid #F3E7E1;
-         border-radius:22px;
-         outline:none;
-         text-decoration:none;
-         box-shadow:0 8px 24px rgba(255, 79, 139, 0.08);">
+    <img src="https://res.cloudinary.com/wk2nvqhl/image/upload/v1783022820/topo_emkt_yt6ann.png"
+     alt="Calcule o potencial de economia da sua operação em menos de 2 minutos"
+     width="552"
+     class="hero-img"
+     style="
+     display:block;
+     width:100%;
+     max-width:552px;
+     height:auto;
+     border:1px solid #F3E7E1;
+     border-radius:22px;
+     outline:none;
+     text-decoration:none;
+     box-shadow:0 8px 24px rgba(255, 79, 139, 0.08);">
 
   </td>
 </tr>
@@ -228,24 +271,25 @@
       <tr>
         <td align="center">
 
-          <a href="https://flowcrm.com"
-             class="cta-button"
-             style="
-             background:#FF7A30;
-             background:linear-gradient(90deg, #FF7A30 0%, #FF4F8B 100%);
-             color:#FFFFFF;
-             text-decoration:none;
-             font-family:Arial, Helvetica, sans-serif;
-             font-size:14px;
-             font-weight:bold;
-             letter-spacing:0.3px;
-             padding:16px 54px;
-             border-radius:7px;
-             display:inline-block;
-             box-shadow:0 4px 10px rgba(255, 79, 139, 0.18);">
-             CALCULAR MEU ROI
-          </a>
-
+         <a href="https://flowcrm.com"
+   class="cta-button"
+   style="
+   background:#FF7A30;
+   background:linear-gradient(90deg, #FF7A30 0%, #FF4F8B 50%, #FF7A30 100%);
+   background-size:200% auto;
+   background-position:left center;
+   color:#FFFFFF;
+   text-decoration:none;
+   font-family:Arial, Helvetica, sans-serif;
+   font-size:14px;
+   font-weight:bold;
+   letter-spacing:0.3px;
+   padding:16px 54px;
+   border-radius:7px;
+   display:inline-block;
+   box-shadow:0 4px 10px rgba(255, 79, 139, 0.18);">
+   CALCULAR MEU ROI
+</a>
         </td>
       </tr>
     </table>
@@ -433,7 +477,7 @@
 
           <a href="https://flowcrm.com"
              style="color:#777777;text-decoration:none;">
-            www.flowcrm.com
+            flowcrm.com
           </a>
 
         </td>
